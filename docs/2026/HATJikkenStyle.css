@@ -22,16 +22,15 @@
 }
 
 .warn{
-    color: #FF8C00;
     font-weight: bold;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    color: #FFFFFF;
-    background-color: #FF8C00;
-    border: 1px solid #FF8C00;
+    color: #7A3500;
+    background-color: #FFF1DC;
+    border: 1px solid #FF8D00;
 }
 
 .source_code{
@@ -51,21 +50,18 @@
     padding       : 0;
 }
 
-dl#robotparam{
- margin-top: 4px;
- margin-bottom: 18px;
- margin-left: 32px;
+dl#robotparam {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 6px 16px;
+    margin: 4px 15px 18px;
 }
-dl#robotparam dt{
- display: block;
- width: 250px;
- float: left;
- clear: left;
- text-align: right;
-}
-dl#robotparam dd{
- display: block;
- float: left;
+dl#robotparam dt, dl#robotparam dd {
+    float: none;
+    width: auto;
+    margin: 0;
+    text-align: left;
+    overflow-wrap: anywhere;
 }
 
 .figure{
@@ -87,10 +83,15 @@ dl#robotparam dd{
 #outline { box-sizing: border-box; width: 838px; min-width: 0; max-width: 100%; }
 #outline img, #header img { max-width: 100%; height: auto; }
 #outline pre { overflow-x: auto; max-width: 100%; }
-.archive-note { border-left: 3px solid #FF8D00; padding: 8px 12px; background: #fff4e5; }
 @media (max-width: 600px) {
   #outline { padding: 12px; overflow-wrap: anywhere; }
   #outline h1 { font-size: 28px; margin-left: 0; }
   #outline p, #outline h2, #outline h3 { margin-left: 0; }
   #outline ul, #outline ol { padding-left: 24px; }
 }
+
+/* 2026 heading accents and keyboard focus. */
+#outline h2 { color: #FF8D00; }
+a:focus-visible { outline: 3px solid #164e9c; outline-offset: 3px; }
+#outline .source_code pre { white-space: pre; overflow-wrap: normal; word-wrap: normal; }
+#header, #footer { overflow-wrap: anywhere; }
