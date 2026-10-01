@@ -1,6 +1,7 @@
 # coins_jikken_docs
 
-coins 主専攻実験 公開用
+coins 主専攻実験 公開用（2026年度）
 
+2024年度：https://logwat.github.io/jikken/2024/index.html
 
-https://logwat.github.io/jikken/2025/index.html
+2025年度：https://logwat.github.io/jikken/2025/index.html

@@ -1,0 +1,96 @@
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+#outline div{
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+#outline #fig{
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+#outline dl{
+    padding-left: 4px;
+    margin-left: 8px;
+}
+
+.warn{
+    color: #FF8C00;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #FF8C00;
+    border: 1px solid #FF8C00;
+}
+
+.source_code{
+    margin        : 10px 3px 10px 15px;
+    padding       : 15px 10px;
+    border        : solid 1px #D0D0D0;
+    background    : #e8f0f0;
+}
+.source_code pre{
+    overflow      : auto;
+    white-space   : pre-wrap;
+    word-wrap     : break-word;
+    font-family   :"Monaco","Courier",monospace;
+    font-size     : 12px;
+    line-height   : 18px;
+    margin        : 0;
+    padding       : 0;
+}
+
+dl#robotparam{
+ margin-top: 4px;
+ margin-bottom: 18px;
+ margin-left: 32px;
+}
+dl#robotparam dt{
+ display: block;
+ width: 250px;
+ float: left;
+ clear: left;
+ text-align: right;
+}
+dl#robotparam dd{
+ display: block;
+ float: left;
+}
+
+.figure{
+    font-size     : 12px;
+    text-align    : center;
+    font-weight   : bold;
+}
+.figure img{
+    display: block;
+    margin: 1px auto;
+}
+
+.figure_gazebo img{
+    display: block;
+    width: 100%;
+    margin: 1px auto;
+}
+/* 2026: preserve the existing appearance while fitting narrow screens. */
+#outline { box-sizing: border-box; width: 838px; min-width: 0; max-width: 100%; }
+#outline img, #header img { max-width: 100%; height: auto; }
+#outline pre { overflow-x: auto; max-width: 100%; }
+.archive-note { border-left: 3px solid #FF8D00; padding: 8px 12px; background: #fff4e5; }
+@media (max-width: 600px) {
+  #outline { padding: 12px; overflow-wrap: anywhere; }
+  #outline h1 { font-size: 28px; margin-left: 0; }
+  #outline p, #outline h2, #outline h3 { margin-left: 0; }
+  #outline ul, #outline ol { padding-left: 24px; }
+}
